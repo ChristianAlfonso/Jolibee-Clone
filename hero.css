@@ -1,0 +1,112 @@
+.hero-page {
+    background: url(/img/jolibee-hero.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.hero-page .left-hero {
+    margin: 100px 0px 100px 70px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: center;
+    min-width: 280px;
+}
+
+.hero-page .left-hero h1 {
+    color: white;
+    font-size: 54px;
+    min-width: 300px;
+    text-align: center;
+}
+
+.hero-page .left-hero .left-hero-description {
+    width: auto;
+    text-align: center;
+}
+.hero-page .left-hero .left-hero-description2 {
+    width: 65%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero-page .right-hero {
+    border: 1pxs solid lime;
+    flex: 1;
+}
+
+.left-hero-container {
+    width: auto;
+    flex-direction: column ;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#order-now-hero {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border: 1px solid orange;
+    background: #FA8003;
+    padding: 20px 40px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;}
+#order-now:hover {
+    background: #de740a;
+    
+}
+
+@media (max-width: 1267px) {
+    .hero-page {
+        height: 80vh;
+    }
+    .hero-page .right-hero {
+        display: none;
+    }
+
+    .hero-page .left-hero {
+        padding-top: 2rem;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:730px) {
+
+    .hero-page  {
+        background: url(/img/jolibee-mobile-hero.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+    }
+
+    .hero-page .left-hero {
+        margin-bottom: 100px;
+        padding: 0;
+    }
+
+    .hero-page .left-hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-page .left-hero .left-hero-description2 {
+        font-size: 1.4rem;
+    }
+
+    
+   #order-now-hero {
+    padding: 13px  30px;
+    font-size: 23px;
+   }
+}

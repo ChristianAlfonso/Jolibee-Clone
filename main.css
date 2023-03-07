@@ -1,0 +1,51 @@
+@import "header.css";
+@import "hero.css"; 
+@import "promos.css";
+@import "menu.css";
+@import "footer.css";
+@import "about.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Short Stack; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    min-width: 433px;
+    height: auto;
+}
+
+.up-btn {
+    display: none;
+    transition: .5s ease-in-out;
+}
+
+.upper-btn {
+    border-radius: 50%;
+    width: 60px;
+    text-align: center;
+    position: fixed ;
+    bottom: 5%;
+    right: 2%;
+    cursor: pointer;
+    display: block;
+}
+
+.upper-btn a {
+    border-radius: 50%;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+}
+

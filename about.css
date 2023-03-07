@@ -1,0 +1,52 @@
+.about-page {
+    height: auto;
+}
+
+.about-page .about-wrapper {
+    margin: 45px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem
+}
+
+
+ 
+.about-page .about-wrapper .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    gap: 1rem;
+}
+
+#about-header-1 {
+    margin: 15px 80px;
+    border-bottom: 5px solid orange;
+}
+
+#about-header-2 {
+    margin: 15px 40px;
+    border-bottom: 5px solid red;
+}
+
+#jolibee-about-first {
+    margin: 20px 20px 40px 20px;
+    box-shadow: 45px 45px 0px -3px rgba(255,164,0,0.75);
+-webkit-box-shadow: 45px 45px 0px -3px rgba(255,164,0,0.75);
+-moz-box-shadow: 45px 45px 0px -3px rgba(255,164,0,0.75);
+border-radius: 20px;
+}
+
+#jolibee-about-second {
+    margin: 20px 20px 40px 20px;
+    box-shadow: -45px 45px 0px -3px rgba(255,0,0,0.75);
+    -webkit-box-shadow: -45px 45px 0px -3px rgba(255,0,0,0.75);
+    -moz-box-shadow: -45px 45px 0px -3px rgba(255,0,0,0.75);
+    border-radius: 20px;    
+}

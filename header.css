@@ -1,0 +1,142 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #d6001c ;
+    border-bottom: 5px solid #ff8001;
+    width: 100%;
+    padding: 15px 8%;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+}
+
+header img {
+    width: 200px;
+}
+
+header .nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+header .nav-bar ul li  {
+    position: relative;
+    margin: 20px;
+}
+
+header .nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dropdown li {
+    display: block;
+}
+
+header .nav-bar ul li .dropdown li a {
+    color: black;
+    font-size: 15px;
+}
+
+header .nav-bar ul li ul.dropdown {
+    position: absolute;
+    width: 10rem;
+    display: none;
+    background: white;
+    z-index: 22;    
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+
+
+header .nav-bar ul li:hover .dropdown {
+    display: block;
+}
+
+#order-now {
+    border: 1px solid orange;
+    background: #FA8003;
+    padding: 15px 30px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#order-now:hover {
+    background: #de740a;
+}
+
+.scrollHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #d6001c ;
+    border-bottom: 5px solid #ff8001;
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    transition: .5s ease-in-out;
+}
+
+
+
+@media (max-width: 1267px) {
+    .hamburger {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .hamburger .lines {
+        width: 30px;
+        background: white;
+        margin: 6px 0px;
+        height: 5px;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .nav-bar {
+        position: absolute;
+        top: 11%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: white;
+        display: none;
+    }
+
+    .nav-bar.active {
+        height: 100vh;
+        display: block;
+        width: 100%;
+    }
+
+    .nav-bar ul {
+        margin-top: 70px;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .scrollHeader .nav-bar.active {
+        top: 100%;
+    }
+
+    
+    header .nav-bar ul li a {
+        color: black;
+    }
+
+    .scrollHeader {
+        justify-content: space-between;
+        padding: 25px;
+    }
+    header .nav-bar ul li ul.dropdown  {
+        margin: 0;
+    }
+
+}

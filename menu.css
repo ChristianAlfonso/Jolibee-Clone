@@ -1,0 +1,94 @@
+.menu-page {
+    height: auto;
+    background: #ffeab8;
+    padding: 3% 0%;
+}
+
+.menu-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.menu-page .menu-children {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+#menu-hidden {
+    display: none;
+}
+
+.menu-page .menu-cards  {
+    font-weight: bold;
+    margin: 1%; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    flex-direction: column;
+    font-size: 20px;
+    border-radius: 20px;
+    gap: 20px;
+    aspect-ratio: 1;
+}
+
+
+.menu-page .menu-btn {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.menu-page .menu-btn a{
+    padding: 20px 30px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background: #FA8003;
+    border-radius: 50px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+}
+
+
+#menu-one {
+    background-color: red;
+    color: white;
+}
+
+#menu-two {
+    background-color: #FFA400;
+    color: white;
+}
+
+#menu-three {
+    color: white;
+    background-color: #009ca6;
+}
+
+@media only screen and (max-width: 1300px) {
+   
+    
+    #menu-hidden {
+        display: block;
+        background-color: #FA8003;
+        color: white;   
+        font-weight: bold;
+        padding: 20px;
+        height: 400px;
+        flex-direction: column;
+        font-size: 20px;
+        text-align: left;
+    }    
+
+}
+
+

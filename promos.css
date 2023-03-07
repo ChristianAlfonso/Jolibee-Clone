@@ -1,0 +1,111 @@
+
+
+.promo-page {
+    height: auto;
+    width: 100%;
+    word-break: keep-all;
+    padding: 2% 11%
+}
+
+.promo-page .dial-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 4% 6% 4%;
+    border-bottom: 1px solid gray;
+}
+
+.promo-page .dial-container .dial-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+}
+
+.promo-page .dial-container .dial-cards .dial-text {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.promo-page .promo-title {
+    height: 10vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.promo-page .promo-children {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#promo-hidden {
+    display: none;
+}
+
+
+.promo-page .promo-children img {
+    border-radius: 20px;
+    width: 320px;
+    margin: 2%;
+}
+
+.promo-page .promo-btn {
+    display: flex;
+    justify-content: center;
+    padding: 20px;  
+}
+
+@media (max-width: 1415px) {
+   #promo-hidden {
+    display: block;
+   }
+
+   
+}
+
+
+
+@media only screen and  (max-width: 909px ){
+    .promo-page {
+        padding: 0;
+    }
+
+   
+
+    .promo-page .promo-children img {
+        width: 270px;
+    }
+
+    .promo-page .dial-container .dial-cards .dial-text {
+        font-size: 18px;
+    }
+    .promo-page .dial-container .dial-cards .dial-img img {
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 603px) {
+    .promo-page {
+        padding: 2% 5%;        
+    }
+    .promo-page .dial-container .dial-cards .dial-img img {
+        width: 70px;
+    }
+
+    .promo-page .promo-children img {
+        width: 170px;
+    }
+
+}
