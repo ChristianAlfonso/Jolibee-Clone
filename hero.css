@@ -84,7 +84,7 @@
 @media (max-width:730px) {
 
     .hero-page  {
-        background: url(/img/jolibee-mobile-hero.webp);
+        background: url(jolibee-mobile-hero.webp);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
